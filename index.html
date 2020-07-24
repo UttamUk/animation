@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UK</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--css files-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <button class="custom-btn1" type="button" data-toggle="modal" data-target="#modal">
+        Add Name
+    </button>
+    <section class="browserdata">
+        <h1 class="info-title" id="username">
+            <span>U</span>
+            <span>K</span>
+            <!-- <span>U</span>
+            <span>T</span>
+            <span>T</span>
+            <span>A</span>
+            <span>M</span>
+            <span>U</span>
+            <span>K</span> -->
+        </h1>
+        <div class="bubble"></div>
+        <div class="wifi-box">
+            <span id="network" class="network">4g</span>
+            <span id="network2" class="network network2">X</span>
+            <div class="wifi"></div>
+            <h6 class="wifi-title">
+                Wifi
+                (<span id="speed"></span>)
+            </h6>
+            <!-- <p id="speed"></p> -->
+        </div>
+        <div class="plug">
+            <svg version="1.1" width="113" height="106" xmlns="http://www.w3.org/2000/svg">
+                <g id="main">
+                    <rect x="70" y="30" rx="6" ry="20" width="40" height="10"
+                        style="fill:rgb(109, 109, 109);opacity:1" />
+                    <rect x="70" y="60" rx="6" ry="20" width="40" height="10"
+                        style="fill:rgb(109, 109, 109);opacity:1" />
+                    <rect class="plug1" x="50" y="10" rx="20" ry="20" width="40" height="80" />
+                    <rect class="plug1" x="29" y="25" rx="10" ry="20" width="30" height="50" />
+                </g>
+                <path class="wire" d="M4,41 C33,14 44,75 63,22" />
+            </svg>
+        </div>
+        <div class="battery" id="btr">
+            <div class="charging" id="charging"></div>
+            <div class="perc" id="batteryPerc"></div>
+        </div>
+
+    </section>
+
+    <section class="typing" id="typing">
+        <div class="mouse" id="mouse1"></div>
+        <!-- <h1 class="text-anim">Lorem ipsum dolor sit amet.</h1> -->
+        <div class="cirle" id="hidename">
+            UK
+        </div>
+    </section>
+
+    <!-- <section class="section1">
+        <div class="progress">
+            <svg width="200px" height="200px" class="svg-circle">
+                <circle cx="100" cy="100" r="60" class="circle" />
+            </svg>
+        </div>
+    </section> -->
+
+    <!-- <section class="watch">
+        <div class="clock">
+            <h2 class="name">NANI</h2>
+            <div class="wave"></div>
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div> -->
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form  id="form">
+                        <h3 class="modal-title">
+                            Enter Your name
+                        </h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your name"
+                                required />
+                            <small id="emailHelp" class="form-text text-muted">Maximum 7 characters* </small>
+                        </div>
+                        <div class="w-100 text-center">
+                            <button type="submit" class="custom-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/browser.js" type="text/javascript"></script>
+
+    <!-- <script>
+        const deg = 6;
+        const hr = document.querySelector("#hr");
+        const mn = document.querySelector("#mn");
+        const sc = document.querySelector("#sc");
+
+        setInterval(() => {
+            let day = new Date();
+            let hh = day.getHours() * 30;
+            let mm = day.getMinutes() * deg;
+            let ss = day.getSeconds() * deg;
+
+            hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
+            mn.style.transform = `rotateZ(${mm}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
+        });
+    </script> -->
+
+
+
+</body>
+
+</html>
