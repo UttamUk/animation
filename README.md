@@ -4,13 +4,9 @@ Pure CSS3 Animation and Javascript
 
 ### Screenshot
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ```markdown
+![anim](https://user-images.githubusercontent.com/33575994/89505884-ed7c8780-d7e7-11ea-9d7f-a40862fd7ca5.png)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 See demo [Animation Demo](https://uttamuk.github.io/animation/).
